@@ -84,7 +84,7 @@ function check_device_ready_func()
 			break
 		fi
 		if [ $i -eq 5 ]; then
-			/user/bin/npu_powerctrl -o
+			/usr/bin/npu_powerctrl -o
 			sleep 3
 			echo 'reset npu to retry!!!' >> /userdata/npu.log
 		fi
